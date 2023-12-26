@@ -1,0 +1,34 @@
+#!/bin/bash
+echo "script=" $0               #スクリプト名を表示 # Display script name
+echo "from=" $1                 #1つ目の引数を表示 # Display first argument
+echo "to=" $2                 #2つ目の引数を表示 # Display second argument
+echo
+
+if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
+  echo "Usage: $0 [pattern] [replacement] [-l directory]" # 使い方を表示 # Display usage
+  echo "This program replaces the [pattern] with the [replacement] in all files under the current or specified directory." # プログラムの説明を表示 # Display program description
+  echo
+  echo "使い方: $0 [パターン] [置換文字列] [-l ディレクトリ]" # 使い方を日本語で表示 # Display usage in Japanese
+  echo "このプログラムは、カレントディレクトリまたは指定したディレクトリ以下のすべてのファイルで[パターン]を[置換文字列]に置換します。" # プログラムの説明を日本語で表示 # Display program description in Japanese
+  exit 1 # 終了コードを返す # Return exit code
+fi
+
+if [ "$3" = "-l" ]; then # -lオプションがある場合 # If -l option is present
+  dir="$4" # 4つ目の引数をディレクトリとする # Set fourth argument as directory
+  cd $dir
+else # -lオプションがない場合 # If no -l option
+  dir="." # カレントディレクトリとする # Set current directory
+fi
+
+filelist=() # 空の配列を宣言 # Declare an empty array
+while IFS= read -r line # grepの出力を一行ずつ読み込む # Read grep output line by line
+do
+  filelist+=("$line") # 配列に追加 # Add to array
+done < <(grep -rl "$1" ".") # プロセス置換でgrepの出力を渡す # Pass grep output with process substitution
+
+for v in "${filelist[@]}" # 配列の要素をループ # Loop over array elements
+do
+  sed -i "s/$(echo "$1" | sed 's/[\/&]/\\&/g')/$(echo "$2" | sed 's/[\/&]/\\&/g')/g" "$v" # -iオプションでファイルを直接置換し、/gフラグで全ての一致を置換する # Replace files in-place with -i option and replace all matches with /g flag
+  echo dir:$("pwd")
+  echo "$v" # ファイル名を出力する # Print file name
+done
