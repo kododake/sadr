@@ -1,5 +1,5 @@
-# sadr
-## Search AnD sed Replacement
+# SGR
+## Sed-Grep-Replace.sh
 #### Usage: [pattern] [replacement] [-l directory]
 ##### This program replaces the [pattern] with the [replacement] in all files under the current or specified directory.
 
