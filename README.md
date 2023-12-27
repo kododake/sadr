@@ -19,3 +19,5 @@ sudo mv sgr /usr/local/bin/sgr
 #### 使い方: [検索文字列] [置換文字列]
 ##### このプログラムは、カレントディレクトリ以下のすべてのファイルで[パターン]を[置換文字列]に置換します。
 #### このプロジェクトはまだ開発段階にあるため、このプログラムを使用することによって発生した問題については一切の責任を負いません。
+#### Licence:
+##### License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
