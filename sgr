@@ -3,6 +3,7 @@
 
 if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
   echo "v1.0"
+  echo "License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>."
   echo "Usage: [Find] [Replace]" # 使い方を表示 # Display usage
   echo "This program replaces the [Find] with the [Replace] in all files under the current directory." # プログラムの説明を表示 # Display program description
   echo
