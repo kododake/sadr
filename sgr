@@ -7,7 +7,7 @@ echo
 
 if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
   echo "Usage: $0 [pattern] [replacement]" # 使い方を表示 # Display usage
-  echo "This program replaces the [pattern] with the [replacement] in all files under the current directory." # プログラムの説明を表示 # Display program description
+  echo "This program replaces the [Find] with the [Replace] in all files under the current directory." # プログラムの説明を表示 # Display program description
   echo
   echo "使い方: $0 [パターン] [置換文字列]" # 使い方を日本語で表示 # Display usage in Japanese
   echo "このプログラムは、カレントディレクトリ以下のすべてのファイルで[パターン]を[置換文字列]に置換します。" # プログラムの説明を日本語で表示 # Display program description in Japanese
