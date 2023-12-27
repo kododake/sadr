@@ -5,6 +5,15 @@
 ```
 $ sgr [Find] [Replace]
 ```
+#### Normal Installation:
+
+````
+$ cd /tmp
+$ wget https://raw.githubusercontent.com/kododake/sgr/main/sgr
+$ sudo chmod +x sgr
+$ sudo mv sgr /usr/local/bin/sgr
+````
+
 ##### This program replaces the [Find] with the [Replace] in all files under the current directory.
 #### Since this project is still in the development stage, I do not accept any responsibility for any problems caused by using this program.
 #### 使い方: [検索文字列] [置換文字列]" 
