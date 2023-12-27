@@ -3,7 +3,7 @@ if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
   echo "v1.0"
   echo "License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>."
   echo "Copyright (C) 2023 kododake (https://github.com/kododake)."
-  echo "Usage: [Find] [Replace]" # 使い方を表示 # Display usage
+  echo "Usage: sgr [Find] [Replace]" # 使い方を表示 # Display usage
   echo "This program replaces the [Find] with the [Replace] in all files under the current directory." # プログラムの説明を表示 # Display program description
   echo
   echo "使い方: [検索文字列] [置換文字列]" # 使い方を日本語で表示 # Display usage in Japanese
