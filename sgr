@@ -1,9 +1,5 @@
 #!/bin/bash
 #https://github.com/kododake
-echo "script=" $0               #スクリプト名を表示 # Display script name
-echo "from=" $1                 #1つ目の引数を表示 # Display first argument
-echo "to=" $2                 #2つ目の引数を表示 # Display second argument
-echo
 
 if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
   echo "Usage: $0 [pattern] [replacement]" # 使い方を表示 # Display usage
