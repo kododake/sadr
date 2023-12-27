@@ -1,10 +1,10 @@
 # SGR
 ## Sed Grep Replace
 #### Usage: 
-'''
-$ sgr [Find] [Replace]
-'''
 
+```
+$ sgr [Find] [Replace]
+```
 ##### This program replaces the [Find] with the [Replace] in all files under the current directory.
 #### Since this project is still in the development stage, I do not accept any responsibility for any problems caused by using this program.
 #### 使い方: [検索文字列] [置換文字列]" 
