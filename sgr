@@ -2,7 +2,7 @@
 #https://github.com/kododake
 
 if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
-  echo "Usage: $0 [pattern] [replacement]" # 使い方を表示 # Display usage
+  echo "Usage: $0 [Find] [Replace]" # 使い方を表示 # Display usage
   echo "This program replaces the [Find] with the [Replace] in all files under the current directory." # プログラムの説明を表示 # Display program description
   echo
   echo "使い方: $0 [検索文字列] [置換文字列]" # 使い方を日本語で表示 # Display usage in Japanese
