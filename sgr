@@ -1,5 +1,4 @@
 #!/bin/bash
-
 if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
   echo "v1.0"
   echo "License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>."
