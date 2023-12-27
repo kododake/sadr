@@ -6,11 +6,11 @@
 $ sgr [Find] [Replace]
 ```
 #### Normal Installation:
-
+(Can copy and paste.)
 ````
-cd /tmp\
-wget https://raw.githubusercontent.com/kododake/sgr/main/sgr\
-sudo chmod +x sgr\
+cd /tmp&&\
+wget https://raw.githubusercontent.com/kododake/sgr/main/sgr&&\
+sudo chmod +x sgr&&\
 sudo mv sgr /usr/local/bin/sgr
 ````
 
