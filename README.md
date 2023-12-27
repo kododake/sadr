@@ -8,10 +8,10 @@ $ sgr [Find] [Replace]
 #### Normal Installation:
 
 ````
-$ cd /tmp
-$ wget https://raw.githubusercontent.com/kododake/sgr/main/sgr
-$ sudo chmod +x sgr
-$ sudo mv sgr /usr/local/bin/sgr
+cd /tmp
+wget https://raw.githubusercontent.com/kododake/sgr/main/sgr
+sudo chmod +x sgr
+sudo mv sgr /usr/local/bin/sgr
 ````
 
 ##### This program replaces the [Find] with the [Replace] in all files under the current directory.
