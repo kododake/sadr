@@ -4,9 +4,8 @@
 
 ```
 $ sgr [Find] [Replace]
-
-##### Strings with spaces between them must be enclosed in single quotation marks.
 ```
+##### Strings with spaces between them must be enclosed in single quotation marks.
 #### Normal Installation:
 (Can copy and paste.)
 ````
