@@ -12,7 +12,7 @@ if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
 fi
 
 dir="." # カレントディレクトリとする # Set current directory
-echo dir:$("pwd")/
+echo dir:$("pwd")
 
 filelist=() # 空の配列を宣言 # Declare an empty array
 while IFS= read -r line # grepの出力を一行ずつ読み込む # Read grep output line by line
