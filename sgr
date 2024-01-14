@@ -22,7 +22,7 @@ do
 done < <(grep -rl "$1" ".") # プロセス置換でgrepの出力を渡す # Pass grep output with process substitution
 
 echo -e $"\e[32m${filelist[@]}\e[m"
-read -p "ok? (y/N): " yn
+read -p "Do you want to continue? [y/N]: " yn
 case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 
 for v in "${filelist[@]}" # 配列の要素をループ # Loop over array elements
