@@ -11,14 +11,19 @@ if [ $# -eq 0 ]; then # 引数がない場合 # If no arguments
   exit 1 # 終了コードを返す # Return exit code
 fi
 
+LF='\n'
 dir="." # カレントディレクトリとする # Set current directory
-echo dir:$("pwd")
+echo dir:$("pwd")/
 
 filelist=() # 空の配列を宣言 # Declare an empty array
 while IFS= read -r line # grepの出力を一行ずつ読み込む # Read grep output line by line
 do
   filelist+=("$line") # 配列に追加 # Add to array
 done < <(grep -rl "$1" ".") # プロセス置換でgrepの出力を渡す # Pass grep output with process substitution
+
+echo -e $"\e[32m${filelist[@]}\e[m"
+read -p "ok? (y/N): " yn
+case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 
 for v in "${filelist[@]}" # 配列の要素をループ # Loop over array elements
 do
